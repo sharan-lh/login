@@ -1,3 +1,5 @@
+/* Use this Query to create the database*/
+
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(5) NOT NULL AUTO_INCREMENT,
   `username` varchar(25) NOT NULL,
