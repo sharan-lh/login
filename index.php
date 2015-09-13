@@ -9,7 +9,7 @@ if(isset($_SESSION['user'])!="")
 
 if(isset($_POST['btn-login']))
 {
-	mysql_select_db("user",$con);
+	mysql_select_db("user",$con); // here "user" is the database name ,replace "use"r with  the database you have created 
 	$email = mysql_real_escape_string($_POST['email']);
 	$upass = mysql_real_escape_string($_POST['pass']);
 	$res=mysql_query("SELECT * FROM users WHERE email='$email'");
